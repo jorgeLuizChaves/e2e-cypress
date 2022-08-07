@@ -2,8 +2,8 @@ let websiteAddress = "http://automationpractice.com/index.php";
 
 let botaoLogin = "#header > div.nav > div > div > nav > div.header_user_info > a";
 
-describe('empty spec', () => {
-  it('passes', () => {
+describe('login application', () => {
+  it('should login successfully', () => {
     cy.visit(websiteAddress)
     cy.get(botaoLogin).click()
     // pega input email pelo atributo ID
